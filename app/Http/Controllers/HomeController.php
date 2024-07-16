@@ -15,7 +15,7 @@ class HomeController extends Controller {
         // $gross_profit_period_array = ['Januari', 'Februari', 'Maret', 'April'];
 
         $employee_data = $this->get_marketing_employee_data();
-        $commission_rate = 0.5;
+        $commission_rate = 0.1;
         $marketing_array = [];
         $gross_profit_job_array = [];
         $gross_profit_period_array = [];

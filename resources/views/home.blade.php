@@ -54,21 +54,21 @@
 
             <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                 <div class="form-floating shadow-none">
-                    <input type="date" class="form-control shadow-none" id="job_period" placeholder="" value="">
+                    <input type="date" class="form-control shadow-none" id="job_period" placeholder="">
                     <label for="job_period"><i class="bi bi-calendar-week"></i> Job Period</label>
                 </div>
             </div>
 
             <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                 <div class="form-floating shadow-none">
-                    <input type="text" class="form-control shadow-none" id="job_amount" placeholder="" value="">
+                    <input type="text" class="form-control shadow-none" id="job_amount" placeholder="">
                     <label for="job_amount"><i class="bi bi-credit-card-2-front"></i> Amount (in Rupiah)</label>
                 </div>
             </div>
 
             <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                 <div class="form-floating shadow-none">
-                    <input type="text" class="form-control shadow-none" id="gross_profit" placeholder="" value="">
+                    <input type="text" class="form-control shadow-none" id="gross_profit" placeholder="">
                     <label for="gross_profit"><i class="bi bi-credit-card-2-front"></i> Gross Profit</label>
                 </div>
             </div>
@@ -128,10 +128,7 @@
                 let job_amount = $("#job_amount").val();
                 let gross_profit = $("#gross_profit").val();
 
-                let commission = (parseFloat(gross_profit) * parseFloat(commission_amount));
-
-                console.log(parseFloat(gross_profit));
-                console.log(parseFloat(commission_amount));
+                let commission = (Number(gross_profit.replace(/,/g, "")) * parseFloat(commission_amount));
 
                 $("#commission-result-number").text(`${commission}`);
                 $("#commission-result-number").mask('000,000,000', {reverse: true});
