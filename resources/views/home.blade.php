@@ -69,7 +69,7 @@
             <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                 <div class="form-floating shadow-none">
                     <input type="text" class="form-control shadow-none" id="gross_profit" placeholder="" value="">
-                    <label for="gross_profit"><i class="bi bi-credit-card-2-front"></i> Gross Profit (in Rupiah)</label>
+                    <label for="gross_profit"><i class="bi bi-credit-card-2-front"></i> Gross Profit</label>
                 </div>
             </div>
 
