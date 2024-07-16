@@ -18,11 +18,7 @@ git clone https://github.com/azaria-fairuz/commission-calculator.git
 ```bash
 composer update
 ```
-3. Migrate all base laravel required database
-```bash
-php artisan migrate:fresh --seed
-```
-4. Then create new database in a Postgresql database and add database configuration to the .env file
+3. Then create new database in a Postgresql database and add database configuration to the .env file
 ```bash
 // example
 DB_CONNECTION=pgsql
@@ -31,6 +27,10 @@ DB_PORT=5432
 DB_DATABASE=commission-calculator
 DB_USERNAME=postgres
 DB_PASSWORD=postgres
+```
+4. Migrate all base laravel required database
+```bash
+php artisan migrate:fresh --seed
 ```
 5. After that run all sql files in database/scripts directories
 ```bash
